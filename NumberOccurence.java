@@ -24,7 +24,7 @@ public class NumberOccurence {
 				if (arr[i] / i > 1)
 					System.out.println(i + " occurs " + arr[i] / i + " times");
 				else
-					System.out.println(i + " occurs " + arr[i] / i + " time");
+					System.out.println(i + " occurs " + 1 + " time");
 			}
 		}
 	}
