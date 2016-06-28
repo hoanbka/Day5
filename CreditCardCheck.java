@@ -76,6 +76,9 @@ public class CreditCardCheck {
 				if ((getPrefix(number, 2) == 37)) {
 					System.out.println("American Express Card ");
 				}
+				else{
+					return false;
+				}
 			} else {
 				System.out.println("Discovery");
 			}
