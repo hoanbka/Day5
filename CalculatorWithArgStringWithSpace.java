@@ -86,7 +86,7 @@ public class CalculatorWithArgStringWithSpace {
 			if (str.contains("+")) {
 				int index = str.indexOf('+');
 				String subStr1 = str.substring(0, index);
-				String subStr2 = str.substring(index + 2);
+				String subStr2 = str.substring(index + 3);
 				int answer = sum(subStr1, subStr2);
 				System.out.println("Answer = " + answer);
 
