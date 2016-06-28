@@ -66,14 +66,16 @@ public class CreditCardCheck {
 		int d = 1;
 
 		if ((getPrefix(number, d) == 4) || (getPrefix(number, d) == 5)
-				|| (getPrefix(number, d) == 37) || (getPrefix(number, d) == 6)) {
+				|| (getPrefix(number, d) == 3) || (getPrefix(number, d) == 6)) {
 
 			if (getPrefix(number, d) == 4) {
 				System.out.println("Visa Card ");
 			} else if (getPrefix(number, d) == 5) {
 				System.out.println("Master Card ");
-			} else if (getPrefix(number, d) == 37) {
-				System.out.println("American Express Card ");
+			} else if (getPrefix(number, d) == 3) {
+				if ((getPrefix(number, 2) == 37)) {
+					System.out.println("American Express Card ");
+				}
 			} else {
 				System.out.println("Discovery");
 			}
