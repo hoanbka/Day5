@@ -75,8 +75,7 @@ public class CreditCardCheck {
 			} else if (getPrefix(number, d) == 3) {
 				if ((getPrefix(number, 2) == 37)) {
 					System.out.println("American Express Card ");
-				}
-				else{
+				} else {
 					return false;
 				}
 			} else {
@@ -139,12 +138,6 @@ public class CreditCardCheck {
 		} else {
 			System.out.println("\n" + number + " is Invalid. ");
 		}
-		// Test
-		System.out.println("sum Of Double Even Place "
-				+ sumOfDoubleEvenPlace(number));
-		System.out.println("sum Of Odd Place " + sumOfOddPlace(number));
-		System.out.println("Get prefix " + getPrefix(number, 4));
-		System.out.println("isRightPrefix " + isRightPrefix(number));
 
 	}
 }
