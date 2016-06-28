@@ -1,6 +1,5 @@
 package day5;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class NumberOccurence {
@@ -9,28 +8,25 @@ public class NumberOccurence {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int data;
-		int temp = 0;
+
 		Scanner input = new Scanner(System.in);
-		ArrayList<Integer> arraylist = new ArrayList<Integer>();
-		do {
-			System.out.println("Enter an integer from 0 to 100 :");
-			data = input.nextInt();
-			arraylist.add(data);
-		} while (data != 0);// data=0, input process will end
-		
-		while (arraylist.size() > 0) {
-			for (int i = 0; i < (arraylist.size() - 1); i++) {
-				for (int j = 1; j < arraylist.size(); j++) {
-					if (arraylist.get(i) == arraylist.get(j)) {
-						arraylist.remove(i);
-						arraylist.remove(j);
-						temp++;
-					}
-				}
+		int[] arr = new int[100];// declare an array with 100 elements with
+									// default value of each one =0;
+		System.out.println("Enter the integers between 1 and 100: ");
+		for (int i = 0; i < arr.length; i++) {
+			int data = input.nextInt();
+			arr[data] = arr[data] + data;// Sum of array[i] at position i
+			if (data == 0)
+				break;
+		}
+		for (int i = 1; i < arr.length; i++) {
+			if (arr[i] != 0) {
+				if (arr[i] / i > 1)
+					System.out.println(i + " occurs " + arr[i] / i + " times");
+				else
+					System.out.println(i + " occurs " + arr[i] / i + " time");
 			}
 		}
-		System.out.println(temp);
 	}
 
 }

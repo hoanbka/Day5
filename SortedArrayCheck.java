@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class SortedArrayCheck {
 
+	// boolean method to check the array is sorted or not
 	public static boolean isSorted(int[] array) {
 		int size = array.length;
 		boolean isSorted = true;

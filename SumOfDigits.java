@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class SumOfDigits {
 
-	public static int sumOfDigit(int n) {
+	// sum of digits of the number
+	public static int sumOfDigit(int number) {
 		int sum = 0;
-		while (n > 0) {
-			sum = sum + n % 10;
-			n = n / 10;
+		while (number > 0) {
+			sum = sum + number % 10;
+			number = number / 10;
 		}
 		return sum;
 	}
