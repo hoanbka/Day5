@@ -126,14 +126,14 @@ public class CreditCardCheck {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
 		System.out
 				.print("Enter a long integer that represents a credit card : ");
 
-		long number = sc.nextLong();
+		long number = input.nextLong();
 
-		if (isValid(number) == true) {
+		if (isValid(number)) {
 			System.out.println("\n" + number + " is Valid. ");
 		} else {
 			System.out.println("\n" + number + " is Invalid. ");
