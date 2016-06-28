@@ -93,9 +93,7 @@ public class CalculatorWithArgString {
 				double answer = divide(subStr1, subStr2);
 				System.out.println("Answer = " + answer);
 			}
-			// } else {
-			// System.out.println("You entered wrong string, sorry :D");
-			// }
+			
 		} else {
 			System.out.println("You entered wrong string, sorry :D");
 		}
