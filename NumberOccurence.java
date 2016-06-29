@@ -10,7 +10,7 @@ public class NumberOccurence {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		int[] arr = new int[100];// declare an array with 100 elements with
+		int[] arr = new int[101];// declare an array with 100 elements with
 									// default value of each one =0;
 		System.out.println("Enter the integers between 1 and 100: ");
 		for (int i = 0; i < arr.length; i++) {
