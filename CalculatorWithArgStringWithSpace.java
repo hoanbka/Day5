@@ -77,11 +77,8 @@ public class CalculatorWithArgStringWithSpace {
 		System.out.println("Input your string as format (345 + 4567):");
 		Scanner input = new Scanner(System.in);
 		String test = input.nextLine();
-		// System.out.println("Original String = " + test);
 		String str = changedString(test);
-		// System.out.println("ChangedString = " + str);
 
-		// System.out.println(isValidStringInput(str));
 		if (isValidStringInput(str)) {
 			if (str.contains("+")) {
 				int index = str.indexOf('+');
@@ -93,9 +90,7 @@ public class CalculatorWithArgStringWithSpace {
 			} else if (str.contains("-")) {
 				int index = str.indexOf('-');
 				String subStr1 = str.substring(0, index);
-				System.out.println(subStr1);
 				String subStr2 = str.substring(index + 3);
-				System.out.println(subStr2);
 				int answer = subtract(subStr1, subStr2);
 				System.out.println("Answer = " + answer);
 
