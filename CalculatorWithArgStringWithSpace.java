@@ -74,7 +74,7 @@ public class CalculatorWithArgStringWithSpace {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Input your string :");
+		System.out.println("Input your string as format (345 + 4567):");
 		Scanner input = new Scanner(System.in);
 		String test = input.nextLine();
 		System.out.println("Original String = " + test);
