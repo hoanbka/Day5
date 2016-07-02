@@ -10,27 +10,19 @@ public class CalculatorWithArgStringWithSpace {
 	}
 
 	public static int sum(String str1, String str2) {
-		int answer = 0;
-		answer = parseStringToInt(str1) + parseStringToInt(str2);
-		return answer;
+		return parseStringToInt(str1) + parseStringToInt(str2);
 	}
 
 	public static int subtract(String str1, String str2) {
-		int answer = 0;
-		answer = parseStringToInt(str1) - parseStringToInt(str2);
-		return answer;
+		return parseStringToInt(str1) - parseStringToInt(str2);
 	}
 
 	public static int mutiply(String str1, String str2) {
-		int answer = 0;
-		answer = parseStringToInt(str1) * parseStringToInt(str2);
-		return answer;
+		return parseStringToInt(str1) * parseStringToInt(str2);
 	}
 
 	public static double divide(String str1, String str2) {
-		double answer = 0;
-		answer = (double) parseStringToInt(str1) / parseStringToInt(str2);
-		return answer;
+		return (double) parseStringToInt(str1) / parseStringToInt(str2);
 	}
 
 	public static boolean isValidStringInput(String str) {
@@ -59,7 +51,7 @@ public class CalculatorWithArgStringWithSpace {
 
 	}
 
-	public static String changedString(String str) {
+	public static String changeString(String str) {
 		String newStr = str;
 		if (str.contains("+")) {
 			newStr = str.replaceAll(" ", "+");
@@ -77,7 +69,7 @@ public class CalculatorWithArgStringWithSpace {
 		System.out.println("Input your string as format (345 + 4567):");
 		Scanner input = new Scanner(System.in);
 		String test = input.nextLine();
-		String str = changedString(test);
+		String str = changeString(test);
 
 		if (isValidStringInput(str)) {
 			if (str.contains("+")) {
