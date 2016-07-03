@@ -9,10 +9,18 @@ public class SortedArrayCheck {
 		int size = array.length;
 		boolean isSorted = true;
 		for (int i = 0; i < size - 1; i++) {
-			if (array[i] > array[i + 1]) {
-				isSorted = false;
-				break;
+			if (array[0] < array[1]) {
+				if (array[i] > array[i + 1]) {
+					isSorted = false;
+					break;
+				}
+			} else {
+				if (array[i] < array[i + 1]) {
+					isSorted = false;
+					break;
+				}
 			}
+
 		}
 		return isSorted;
 
